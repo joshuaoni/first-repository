@@ -1,0 +1,40 @@
+body{
+	margin:50px;
+}
+
+h2{
+	border: 2px orange solid;
+	font-family: "Comic Sans MS";
+	/*font-weight: 500;*/
+	width: 350px;
+	text-align: center; /*text is aligned in the 
+	 					centre of the 350px*/
+	box-shadow: 4px 4px 4px rgba(90, 85, 85, 0.5);
+	cursor: pointer;
+}
+
+img{
+	width: 405px;
+	height: 270px;
+	margin: 5px;
+	transition: all 1s;
+	/*meaning i want the image to transition when an 
+	action (hover) in this case, is taken upon it - and 
+	i want the transition to occur in 1 second*/
+
+}
+
+.irp{
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+	cursor: pointer;
+	/*OR
+	INSTEAD OF MARGIN 5px WE CAN USE:
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;*/
+}
+img:hover{
+	transform: scale(1.08) /*rotate(360deg)*/;
+	box-shadow: 4px 4px 4px rgba(90, 85, 85, 0.5);
+}
